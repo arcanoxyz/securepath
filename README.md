@@ -52,7 +52,7 @@ Hra obsahuje **5 modulů**, každý se **3 interaktivními scénáři** (celkem 
 Žádná instalace není potřeba. Stačí soubor otevřít v prohlížeči přes odkaz: https://arcanoxyz.github.io/securepath/
 
 
-Nebo jednoduše stáhnout `secure-path-final.html` a otevřít dvojklikem.
+Nebo jednoduše stáhnout `index.html` a otevřít dvojklikem.
 
 ---
 
