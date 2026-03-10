@@ -35,11 +35,9 @@ body::after{
     radial-gradient(ellipse 45% 45% at 95% 95%,rgba(155,127,212,0.08) 0%,transparent 60%);
 }
 
-/* ── views ── */
 .view{display:none;position:fixed;inset:0;z-index:1;flex-direction:column;}
 .view.on{display:flex;}
 
-/* ── shared nav ── */
 .bar{
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 48px;border-bottom:1px solid var(--border);flex-shrink:0;
@@ -54,9 +52,6 @@ body::after{
 @keyframes up{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 
-/* ════════════════════════════════════
-   TITLE
-════════════════════════════════════ */
 #v-title{flex-direction:column;overflow:hidden;}
 
 .title-grid{display:grid;grid-template-columns:1fr 1fr;height:100vh;}
@@ -108,9 +103,7 @@ body::after{
 .ml-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.12);}
 .ml-dot.active{background:var(--accent);box-shadow:0 0 7px var(--accent);}
 
-/* ════════════════════════════════════
-   MAP
-════════════════════════════════════ */
+
 #v-map{overflow:hidden;}
 .map-body{flex:1;display:grid;grid-template-columns:340px 1fr;overflow:hidden;}
 
@@ -150,9 +143,7 @@ body::after{
 .mmod-badge.open{color:var(--accent);}
 .mmod-badge.done{color:var(--ok);}
 
-/* ════════════════════════════════════
-   GAME
-════════════════════════════════════ */
+
 #v-game{overflow:hidden;}
 
 .game-progress-bar{height:2px;background:var(--border);flex-shrink:0;position:relative;}
@@ -170,14 +161,14 @@ body::after{
 .gl-title{font-family:'Rajdhani',sans-serif;font-size:36px;font-weight:700;line-height:1.05;letter-spacing:0.02em;}
 .gl-desc{font-size:14px;color:var(--dim);line-height:1.85;}
 
-/* context widgets */
+
 .widget{border:1px solid var(--border);background:rgba(255,255,255,0.015);margin-top:4px;}
 .w-bar{padding:9px 14px;border-bottom:1px solid var(--border);display:flex;gap:5px;align-items:center;}
 .wd{width:7px;height:7px;border-radius:50%;}
 .wd.r{background:#ff5f57;opacity:0.7;} .wd.y{background:#febc2e;opacity:0.7;} .wd.g{background:#28c840;opacity:0.7;}
 .w-bar-title{font-size:10px;color:var(--dim);letter-spacing:0.12em;margin-left:8px;}
 
-/* email */
+
 .email-row{display:flex;gap:10px;padding:10px 14px 2px;font-size:12px;}
 .er-k{color:var(--dim);min-width:56px;}
 .er-v.warn{color:var(--warn);}
@@ -185,14 +176,14 @@ body::after{
 .email-body{padding:0 14px 14px;font-size:13px;color:var(--dim);line-height:1.8;}
 .email-link{color:var(--accent);text-decoration:underline;display:inline-block;margin-top:6px;cursor:default;}
 
-/* chat bubble */
+
 .chat-wrap{padding:14px;}
 .bubble{padding:12px 16px;font-size:13px;line-height:1.75;border-radius:2px;max-width:88%;}
 .bubble.them{background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--dim);margin-bottom:8px;}
 .bubble.sys{background:rgba(61,184,255,0.07);border:1px solid rgba(61,184,255,0.2);color:var(--text);margin-left:auto;}
 .bubble-label{font-size:9px;letter-spacing:0.2em;color:var(--dim);text-transform:uppercase;margin-bottom:4px;padding-left:2px;}
 
-/* warning banner */
+
 .warn-banner{
   margin:4px 0;padding:14px 16px;
   background:rgba(255,85,102,0.06);border:1px solid rgba(255,85,102,0.25);
@@ -200,7 +191,7 @@ body::after{
 }
 .warn-banner b{color:var(--bad);}
 
-/* password widget */
+
 .pw-wrap{padding:14px;}
 .pw-field{
   display:flex;align-items:center;gap:10px;
@@ -211,7 +202,7 @@ body::after{
 .pw-strength{display:flex;gap:4px;margin-top:2px;}
 .pw-bar{height:3px;flex:1;border-radius:1px;}
 
-/* game right */
+
 .game-r{
   padding:40px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;
 }
@@ -259,9 +250,7 @@ body::after{
 .btn-next.retry{border-color:var(--bad);color:var(--bad);}
 .btn-next.retry:hover{background:rgba(255,85,102,0.06);}
 
-/* ════════════════════════════════════
-   RESULT (per question)
-════════════════════════════════════ */
+
 #v-result{align-items:center;justify-content:center;gap:0;padding:60px;}
 
 .res-icon{
@@ -283,9 +272,7 @@ body::after{
 .res-btn.prim{background:var(--accent);color:var(--bg);border-color:var(--accent);}
 .res-btn.prim:hover{opacity:0.85;}
 
-/* ════════════════════════════════════
-   FINAL SCREEN
-════════════════════════════════════ */
+
 #v-final{align-items:center;justify-content:center;padding:60px;gap:0;}
 .final-title{font-family:'Rajdhani',sans-serif;font-size:clamp(60px,9vw,100px);font-weight:700;line-height:0.9;text-align:center;letter-spacing:-0.01em;opacity:0;animation:up 0.7s 0.1s forwards;}
 .final-title b{color:var(--ok);}
@@ -312,7 +299,7 @@ body::after{
 <body>
 <div class="amb"></div>
 
-<!-- ══════════════ TITLE ══════════════ -->
+
 <div id="v-title" class="view on">
   <div class="title-grid">
     <div class="title-left">
@@ -343,7 +330,6 @@ body::after{
   </div>
 </div>
 
-<!-- ══════════════ MAP ══════════════ -->
 <div id="v-map" class="view">
   <div class="bar">
     <div class="logo">SECURE<b>PATH</b></div>
@@ -366,7 +352,6 @@ body::after{
   </div>
 </div>
 
-<!-- ══════════════ GAME ══════════════ -->
 <div id="v-game" class="view">
   <div class="bar">
     <button class="ghost" onclick="go('map')">← Mapa</button>
@@ -376,7 +361,6 @@ body::after{
   <div class="game-progress-bar"><div class="game-progress-fill" id="g-prog" style="width:0%"></div></div>
   <div class="game-body">
     <div class="game-l" id="game-l">
-      <!-- dynamic -->
     </div>
     <div class="game-r">
       <div class="gr-label">Jak zareaguješ?</div>
@@ -388,7 +372,6 @@ body::after{
   </div>
 </div>
 
-<!-- ══════════════ RESULT ══════════════ -->
 <div id="v-result" class="view">
   <div class="res-icon" id="res-icon">✓</div>
   <div class="res-sublabel" id="res-sublabel">—</div>
@@ -400,7 +383,6 @@ body::after{
   </div>
 </div>
 
-<!-- ══════════════ FINAL ══════════════ -->
 <div id="v-final" class="view">
   <div class="final-title">MISE<br><b>SPLNĚNA</b></div>
   <div class="final-sub">Secure Path — dokončeno</div>
@@ -414,9 +396,7 @@ body::after{
 </div>
 
 <script>
-// ══════════════════════════════════════════════
-// DATA
-// ══════════════════════════════════════════════
+
 const MODULES = [
   {
     num:'01', name:'Phishing', sub:'E-mail · Falešné weby',
@@ -654,18 +634,14 @@ const MODULES = [
   }
 ];
 
-// ══════════════════════════════════════════════
-// STATE
-// ══════════════════════════════════════════════
+
 let completed = new Set();
 let curMod    = 0;
 let curQ      = 0;
 let selChoice = null;
 let didAnswer = false;
 
-// ══════════════════════════════════════════════
-// NAVIGATION
-// ══════════════════════════════════════════════
+
 function go(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
   document.getElementById('v-'+id).classList.add('on');
@@ -673,9 +649,7 @@ function go(id){
   if(id==='title') renderTitleList();
 }
 
-// ══════════════════════════════════════════════
-// TITLE LIST
-// ══════════════════════════════════════════════
+
 function renderTitleList(){
   const el = document.getElementById('title-modlist');
   el.innerHTML = MODULES.map((m,i)=>`
@@ -686,9 +660,7 @@ function renderTitleList(){
     </div>`).join('');
 }
 
-// ══════════════════════════════════════════════
-// MAP
-// ══════════════════════════════════════════════
+
 function renderMap(){
   const done = completed.size;
   document.getElementById('prog-fill').style.width = (done/5*100)+'%';
@@ -717,9 +689,7 @@ function renderMap(){
   });
 }
 
-// ══════════════════════════════════════════════
-// START MODULE
-// ══════════════════════════════════════════════
+
 function startModule(idx){
   curMod    = idx;
   curQ      = 0;
@@ -729,22 +699,20 @@ function startModule(idx){
   go('game');
 }
 
-// ══════════════════════════════════════════════
-// LOAD QUESTION
-// ══════════════════════════════════════════════
+
 function loadQuestion(){
   const m  = MODULES[curMod];
   const q  = m.questions[curQ];
   selChoice = null;
   didAnswer = false;
 
-  // bar
+
   document.getElementById('g-mnum').textContent   = m.num;
   document.getElementById('g-mname').textContent  = m.name;
   document.getElementById('g-qcount').textContent = `Otázka ${curQ+1} / ${m.questions.length}`;
   document.getElementById('g-prog').style.width   = ((curQ)/m.questions.length*100)+'%';
 
-  // left panel
+
   const gl = document.getElementById('game-l');
   let widgetHTML = '';
 
@@ -793,7 +761,7 @@ function loadQuestion(){
     <div class="gl-desc">${q.desc}</div>
     ${widgetHTML}`;
 
-  // choices
+  
   const wrap = document.getElementById('choices-wrap');
   wrap.innerHTML='';
   q.choices.forEach((c,i)=>{
@@ -804,7 +772,7 @@ function loadQuestion(){
     wrap.appendChild(d);
   });
 
-  // reset controls
+  
   const cf = document.getElementById('btn-confirm');
   cf.disabled=true; cf.style.display='block';
   document.getElementById('feedback').className='feedback';
@@ -813,9 +781,7 @@ function loadQuestion(){
   nb.style.display='none'; nb.className='btn-next';
 }
 
-// ══════════════════════════════════════════════
-// PICK CHOICE
-// ══════════════════════════════════════════════
+
 function pickChoice(i){
   if(didAnswer) return;
   selChoice=i;
@@ -823,9 +789,7 @@ function pickChoice(i){
   document.getElementById('btn-confirm').disabled=false;
 }
 
-// ══════════════════════════════════════════════
-// CONFIRM
-// ══════════════════════════════════════════════
+
 function doConfirm(){
   if(selChoice===null||didAnswer) return;
   didAnswer=true;
@@ -852,7 +816,6 @@ function doConfirm(){
   const isLastQ = curQ >= m.questions.length-1;
 
   if(ch.correct){
-    // mark module done on first correct answer per module
     completed.add(curMod);
     if(isLastQ){
       nb.textContent = curMod < MODULES.length-1 ? 'Další modul →' : 'Dokončit hru →';
@@ -866,9 +829,6 @@ function doConfirm(){
   }
 }
 
-// ══════════════════════════════════════════════
-// NEXT
-// ══════════════════════════════════════════════
 function doNext(){
   const q  = MODULES[curMod].questions[curQ];
   const ch = q.choices[selChoice];
@@ -876,26 +836,22 @@ function doNext(){
   const isLastQ = curQ >= m.questions.length-1;
 
   if(!ch.correct){
-    // retry same question
     loadQuestion();
     return;
   }
 
   if(!isLastQ){
-    // next question in same module
     curQ++;
     loadQuestion();
     return;
   }
 
-  // module complete → result screen
+  
   const isLastMod = curMod >= MODULES.length-1;
   showResult(isLastMod);
 }
 
-// ══════════════════════════════════════════════
-// RESULT SCREEN
-// ══════════════════════════════════════════════
+
 function showResult(isLast){
   const m = MODULES[curMod];
 
@@ -942,9 +898,7 @@ function resCta(){
   else startModule(curMod+1);
 }
 
-// ══════════════════════════════════════════════
-// FINAL SCREEN
-// ══════════════════════════════════════════════
+
 function showFinal(){
   const summary = document.getElementById('final-summary');
   summary.innerHTML = MODULES.map((m,i)=>`
@@ -977,9 +931,7 @@ function resetGame(){
   go('title');
 }
 
-// ══════════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════════
+
 renderTitleList();
 renderMap();
 </script>
