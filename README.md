@@ -60,7 +60,7 @@ Nebo jednoduše stáhnout `index.html` a otevřít dvojklikem.
 
 ```
 secure-path/
-├── secure-path-final.html   # celá aplikace v jednom souboru
+├── index.html   # celá aplikace v jednom souboru
 └── README.md
 ```
 
