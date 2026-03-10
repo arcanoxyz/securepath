@@ -75,7 +75,7 @@ Aplikace využívá *dark terminal* estetiku inspirovanou prostředím příkazo
 - CSS Grid layout se striktním oddělením kontextu a voleb odpovědí
 - Scanline overlay a ambientní gradientní osvětlení
 
-Grafický design a prototyp byly vytvořeny ve spolupráci s nástrojem umělé inteligence **Claude** (claude-sonnet-4-6, Anthropic) prostřednictvím rozhraní [claude.ai](https://claude.ai).
+Grafický design a prototyp byly vytvořeny ve spolupráci s nástrojem umělé inteligence **Claude** (claude-sonnet-4-6, Anthropic).
 
 ---
 
